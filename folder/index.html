@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉCLAT | Feminine Luxury Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">ÉCLAT</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#featured" class="nav-link">Shop</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#new" class="nav-link">New</a></li>
+                <li><a href="#about" class="nav-link">Our Story</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="search-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </button>
+                <button class="cart-btn" aria-label="Shopping Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 2 6"/><path d="M2 2l4 4"/><path d="M6 2h12l4 4H6"/><path d="M6 16l4 4"/><path d="M16 2l4 14"/><path d="M6 2v2"/></svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="search-overlay">
+            <div class="search-container">
+                <input type="search" placeholder="Search our collection..." class="search-input">
+                <button class="search-close" aria-label="Close Search">×</button>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">New Season Collection</span>
+            <h1 class="hero-title">Romantic Elegance<br>Crafted for Her</h1>
+            <p class="hero-text">Discover our premium collection designed for the modern woman who embraces timeless beauty.</p>
+            <a href="#featured" class="btn btn-primary">Explore Collection</a>
+        </div>
+    </header>
+
+    <section id="featured" class="section featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curated Treasures</h2>
+                <p>Handpicked pieces for the discerning woman</p>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="women's clothing">Dresses</button>
+                <button class="filter-btn" data-category="jewelery">Jewelry</button>
+            </div>
+            <div class="products-loader">
+                <div class="spinner"></div>
+            </div>
+            <div class="products-grid"></div>
+        </div>
+    </section>
+
+    <section id="new" class="section new-section">
+        <div class="container">
+            <div class="new-collection">
+                <div class="new-content">
+                    <span class="new-badge">Just Arrived</span>
+                    <h2>Spring Romance</h2>
+                    <p>Delicate fabrics and flowing silhouettes for enchanting moments.</p>
+                    <a href="#featured" class="btn btn-outline">View Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="collections" class="section categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop Our World</h2>
+            </div>
+            <div class="categories-grid">
+                <a href="#featured" class="category-card" data-category="women's clothing">
+                    <div class="category-overlay">
+                        <span class="category-icon">♡</span>
+                        <h3>Dresses</h3>
+                    </div>
+                </a>
+                <a href="#featured" class="category-card" data-category="women's clothing">
+                    <div class="category-overlay">
+                        <span class="category-icon">✧</span>
+                        <h3>Tops</h3>
+                    </div>
+                </a>
+                <a href="#featured" class="category-card" data-category="jewelery">
+                    <div class="category-overlay">
+                        <span class="category-icon">✶</span>
+                        <h3>Jewelry</h3>
+                    </div>
+                </a>
+                <a href="#featured" class="category-card" data-category="electronics">
+                    <div class="category-overlay">
+                        <span class="category-icon">✦</span>
+                        <h3>New In</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Whispers of Love</h2>
+                <p>What our customers say about us</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <p class="testimonial-text">"Each piece tells a story of elegance. ÉCLAT understands the art of feminine luxury."</p>
+                    <div class="testimonial-author">
+                        <strong>Isabella Rose</strong>
+                        <span>Bridal Designer</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"The craftsmanship is divine. Every detail whispers sophistication and grace."</p>
+                    <div class="testimonial-author">
+                        <strong>Amélie Laurent</strong>
+                        <span>Fashion Editor</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"I feel like poetry in motion wearing ÉCLAT. Pure magic in every stitch."</p>
+                    <div class="testimonial-author">
+                        <strong>Charlotte Belle</strong>
+                        <span>Luxury Consultant</span>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn prev" aria-label="Previous">←</button>
+                    <button class="testimonial-btn next" aria-label="Next">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <span class="newsletter-badge">Join Our Circle</span>
+                <h2>Receive Beauty in Your Inbox</h2>
+                <p>Be the first to discover new arrivals and exclusive offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ÉCLAT</h3>
+                    <p>Where feminine elegance meets timeless luxury. Crafted for the modern woman who appreciates beauty.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Pinterest">PI</a>
+                        <a href="#" aria-label="Facebook">FB</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#featured">Shop</a></li>
+                        <li><a href="#new">New Arrivals</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Assistance</h4>
+                    <ul>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get in Touch</h4>
+                    <address>
+                        123 Elegant Avenue<br>
+                        New York, NY 10001<br>
+                        <a href="mailto:hello@eclat.com">hello@eclat.com</a>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ÉCLAT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Collection</h3>
+            <button class="cart-close" aria-label="Close Cart">×</button>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">Complete Purchase</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
