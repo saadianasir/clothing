@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>My Dashboard</h1>
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <span class="icon">🌓</span>
+        </button>
+    </header>
+
+    <main class="container">
+        <section class="card" id="weather-card">
+            <h2>Weather</h2>
+            <div class="card-content">
+                <form id="weather-form" class="inline-form">
+                    <label for="weather-city" class="sr-only">City</label>
+                    <input type="text" id="weather-city" placeholder="Enter city name..." required>
+                    <button type="submit">Search</button>
+                </form>
+                <div id="weather-content"></div>
+            </div>
+        </section>
+
+        <section class="card" id="quote-card">
+            <h2>Daily Quote</h2>
+            <div class="card-content">
+                <div id="quote-content"></div>
+                <button id="new-quote" class="secondary-btn">New Quote</button>
+            </div>
+        </section>
+
+        <section class="card" id="todo-card">
+            <h2>Todo List</h2>
+            <div class="card-content">
+                <form id="todo-form" class="inline-form">
+                    <label for="todo-input" class="sr-only">New task</label>
+                    <input type="text" id="todo-input" placeholder="Add a new task..." required>
+                    <button type="submit">Add</button>
+                </form>
+                <ul id="todo-list" class="todo-list"></ul>
+            </div>
+        </section>
+
+        <section class="card" id="notes-card">
+            <h2>Notes</h2>
+            <div class="card-content">
+                <textarea id="notes-textarea" placeholder="Write your notes here..." rows="5"></textarea>
+                <button id="save-notes" class="secondary-btn">Save</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Dashboard</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
